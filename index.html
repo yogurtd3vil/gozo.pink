@@ -2,19 +2,19 @@
 <html>
 <head>
   <title>
-   so os raul
+    Só os Raul
   </title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-<meta property="og:title" content="gozo.pink">
-<meta property="og:description" content="fode com os raul bigode">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:image" content="https://cdn.discordapp.com/emojis/1054917531250462870.png">
-<meta name="theme-color" content="#000001">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <meta property="og:title" content="gozo.pink">
+  <meta property="og:description" content="Fode com os Raul Bigode">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="https://cdn.discordapp.com/emojis/1054917531250462870.png">
+  <meta name="theme-color" content="#000001">
 </head>
 <style>
     body {
-    background-color: black;
-    font-family: 'Montserrat', sans-serif;
+        background-color: black;
+        font-family: 'Montserrat', sans-serif;
     }
     p {
         color: white;
@@ -30,11 +30,10 @@
         height: 200px; 
       }
     }
-
 </style>
 <body>
   <div style="text-align: center;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/j00-ZILxoOk?autoplay=1" frameborder="0" allowfullscreen></iframe>
+    <iframe id="videoFrame" width="560" height="315" frameborder="0" allowfullscreen></iframe>
   </div>
   <div style="text-align: center;">
     <p>yogurt - rep7 - lucas47 - apollo - rwid (femboy) - tat - luisao </p>
@@ -43,5 +42,25 @@
   <div style="text-align: center;">
     <a target="_blank" href="https://scrybabx.cc/"> <p style="color: red;">scrybabx.cc</p> </a>
   </div>
+
+  <script>
+    const videoURLs = [
+      "j00-ZILxoOk",
+      "YT3-muQWfGA",
+      "PgF29M69QXg",
+      "LDebA0LubDo",
+      "fuqu_j4mMLc",
+      "fEUCYAd0KGM",
+      "IMjvIjeGJYc"
+    ];
+
+    function get() {
+      const randomIndex = Math.floor(Math.random() * videoURLs.length);
+      return `https://www.youtube.com/embed/${videoURLs[randomIndex]}?autoplay=1`
+    }
+
+    const iframe = document.getElementById('videoFrame');
+    iframe.src = get();
+  </script>
 </body>
 </html>
